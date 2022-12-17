@@ -1,20 +1,18 @@
 import React from "react";
-import Header from "./Header";
 import '../App.css';
+import Header from "./Header";
+import Container1 from "./Container1";
+import Container2 from "./Container2";
+import Container3 from "./Container3";
 
 const Team = () => {
 
   return (
     <>
       <Header />
-      <div className="container py-5 d-flex justify-content-center">
-        <div class="card border-0"  style={{width:"300px"}}>
-          <img src="https://media.istockphoto.com/id/611065352/photo/hills-and-clouds.jpg?s=612x612&w=0&k=20&c=chTA9wiQxovOYfy1AH0ejqfNBaHC5OIuGtxc2pd9LUw=" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3 class="card-text text-center">Dr.Tapas Pilai</h3>
-          </div>
-        </div>
-      </div>
+      <Container1 />
+      <Container2 />
+      <Container3 />
 
     </>
   )
