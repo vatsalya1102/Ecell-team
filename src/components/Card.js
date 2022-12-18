@@ -7,6 +7,7 @@ function Card(props) {
       <div className="img-wrapper">
         <img src="https://media.istockphoto.com/id/611065352/photo/hills-and-clouds.jpg?s=612x612&w=0&k=20&c=chTA9wiQxovOYfy1AH0ejqfNBaHC5OIuGtxc2pd9LUw=" class="card-img-top" alt="..." />
         <h3 className='fade'>Executive</h3>
+        <a className='fade' href="https://www.linkedin.com/in/vatsalya-sharma-698811224/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </div>
         <div class="card-body">
           <h4 class="card-text text-center fw-normal">{props.name}</h4>

@@ -56,7 +56,8 @@ img{
 }
 
 .img-wrapper > img,
-.img-wrapper > h3 {
+.img-wrapper > h3,
+.img-wrapper > a {
   transition: 200ms ease-in-out;
 }
 
@@ -70,4 +71,21 @@ img{
 
 .img-wrapper:hover > img {
   filter: blur(1px);
+}
+
+.img-wrapper > a.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > a.fade {
+  opacity: 1;
+}
+
+.img-wrapper > a {
+  position: absolute;
+  background: rgba(255, 255, 255, .4);
+  display: flex;
+  margin: 0;
+  left: 44%;
+  top: 70%;
 }
