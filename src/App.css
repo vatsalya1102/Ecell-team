@@ -53,13 +53,15 @@ img{
   height: 79%;
   top: 0;
   opacity: 0;
-  transition: .5s ease;
+  transition: .75s ease;
   background: rgba(255, 255, 255, .4);
   border-radius: 10px;
+  transform: rotate(-360deg);
 }
 
 .img-wr:hover .overlay {
   opacity: 1;
+  transform: rotate(0);
 }
 
 .text {
@@ -78,6 +80,11 @@ a {
   top: 50%;
 }
 
+.img-wr > img {
+  filter: blur(0);
+}
 
-
+.img-wr:hover > img {
+  filter: blur(1px);
+}
 
