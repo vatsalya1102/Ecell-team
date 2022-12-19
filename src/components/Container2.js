@@ -6,9 +6,9 @@ function Container2() {
     <div className="container py-5 d-flex justify-content-center">
       <div className="row d-flex justify-content-center">
 
-        <Card name="Ayush Kaushik"/>
-        <Card name="Harsh Raj"/>
-        <Card name="Vani Sharma"/>
+        <Card name="Ayush Kaushik" position="Manager"/>
+        <Card name="Harsh Raj" position="Assistant Manager"/>
+        <Card name="Vani Sharma" position="Overall Co-ordinator"/>
 
       </div>
     </div>
