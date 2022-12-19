@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+*{
+  user-select: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -88,3 +92,11 @@ a {
   filter: blur(1px);
 }
 
+.card > .card-body{
+  transform: scale(1);
+  transition: .75s ease;
+}
+
+.card:hover > .card-body{
+  transform: scale(1.2);
+}
