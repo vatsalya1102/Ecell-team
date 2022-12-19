@@ -39,9 +39,10 @@
 
 img{
   border-radius: 10px;
+  display: block;
 }
 
-.img-wrapper{
+/* .img-wrapper{
   position: relative;
 }
 
@@ -55,32 +56,6 @@ img{
   align-items:center ;
 }
 
-.img-wrapper > img,
-.img-wrapper > h3,
-.img-wrapper > a {
-  transition: 200ms ease-in-out;
-}
-
-.img-wrapper > h3.fade {
-  opacity: 0;
-}
-
-.img-wrapper:hover > h3.fade {
-  opacity: 1;
-}
-
-.img-wrapper:hover > img {
-  filter: blur(1px);
-}
-
-.img-wrapper > a.fade {
-  opacity: 0;
-}
-
-.img-wrapper:hover > a.fade {
-  opacity: 1;
-}
-
 .img-wrapper > a {
   position: absolute;
   background: rgba(255, 255, 255, .4);
@@ -89,3 +64,65 @@ img{
   left: 44%;
   top: 70%;
 }
+
+.img-wrapper > img,
+.img-wrapper > h3,
+.img-wrapper > a {
+  transition: 200ms ease-in-out;
+}
+
+.img-wrapper > h3.fade,
+.img-wrapper > a.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > h3.fade,
+.img-wrapper:hover > a.fade {
+  opacity: 1;
+}
+
+.img-wrapper:hover > img {
+  filter: blur(1px);
+} */
+
+
+
+.container{
+  position: relative;
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  width:100%;
+  height: 79%;
+  top: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(255, 255, 255, .4);
+  border-radius: 10px;
+}
+
+.img-wr:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a {
+  position: absolute;
+  left: 48%;
+  top: 50%;
+}
+
+
+
+
