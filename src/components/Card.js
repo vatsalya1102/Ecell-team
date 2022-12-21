@@ -11,10 +11,11 @@ function Card(props) {
               <div className="text">{props.position}</div>
               <a href="https://www.linkedin.com/in/vatsalya-sharma-698811224/"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
             </div>
-        </div>
+        
 
         <div class="card-body">
           <h4 class="card-text text-center fw-normal">{props.name}</h4>
+        </div>
         </div>
       </div>
     </div>
